@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>todos</h1>
+      </div>
+
+      <div class="inputbox">
+        <button class="complete-all">></button>
+        <input type="text" placeholder="What needs to be done?" autofocus />
+      </div>
+
+      <div class="itemswrapper">
+        <div class="items"></div>
+      </div>
+
+      <div class="footer">
+        <span class="todo-count"
+          ><span class="list-count">2 </span> items left</span
+        >
+        <span class="filters">
+          <span class="filter">
+            <button class="all-filter">All</button>
+          </span>
+          <span class="filter">
+            <button class="active-filter">Active</button>
+          </span>
+          <span class="filter">
+            <button class="completed-fliter">Completed</button>
+          </span>
+        </span>
+        <button class="clear-completed">Clear Completed</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="server.js"></script>
+  </body>
+</html>
+
+<!-- Write the HTML (Y), Style the page, Give input for user (Y), Show all items to user, Allow each item to be deleted, Allow each item to be marked as completed, Filtering the list, Persist the data through refreshes -->
+
+<!-- CRUD = Create,Read,Update,Delete -->
