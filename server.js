@@ -1,11 +1,8 @@
 const express = require("express");
+const dotenv = require("dotenv").config();
+const port = process.env.PORT || 3000;
 const app = express();
-app.listen(3000);
 
-app.get("/", (req, res) => {
-  res.send("Hello World");
-});
+app.listen(port, () => console.log(`Server started on port ${port}`));
 
-app.post("/", (req, res) => {
-  res.send(list);
-});
+app.use("/todo", require("./routes"));
