@@ -8,9 +8,9 @@
   },
   "name": "to-do-list",
   "version": "1.0.0",
-  "main": "exercises.js",
+  "main": "script.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon ./backend/server.js"
   },
   "keywords": [],
   "author": "",

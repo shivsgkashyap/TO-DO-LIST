@@ -5,4 +5,4 @@ const app = express();
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
 
-app.use("/todo", require("./routes"));
+app.use("/todo", require("./routes/routes"));
