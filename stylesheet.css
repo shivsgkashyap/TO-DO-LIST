@@ -1,56 +1,93 @@
-*{
+* {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-    background: #f5f5f5;
-    color: #4d4d4d;
-    font-weight: 300;
+body {
+  background: #f5f5f5;
+  color: #4d4d4d;
+  font-weight: 300;
 }
-
 
 h1 {
   font-size: 100px;
   font-weight: 100;
   text-align: center;
   color: rgba(175, 47, 47, 0.15);
-  margin-top: 10px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
-.inputbox, .itemswrapper {
+.input-box,
+.items-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.inputbox {
+.input-box {
   position: relative;
+}
+
+button {
+  background-color: #ffffff;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  color: #222222;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin: 0;
+  outline: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
+    transform 0.1s;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+button:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow 0.2s;
+}
+
+button:active {
+  background-color: #f7f7f7;
+  border-color: #000000;
+  transform: scale(0.96);
+}
+
+button:disabled {
+  border-color: #dddddd;
+  color: #dddddd;
+  cursor: not-allowed;
+  opacity: 1;
 }
 
 .complete-all {
   position: absolute;
-  left: 33vw;
+  visibility: hidden;
+  right: 10px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin: auto;
+  width: 560px;
   visibility: hidden;
 }
 
-
-.footer {
-display: flex;
-justify-content: center;
-padding: 5px;
-margin: auto;
-width: 560px;
-visibility: hidden;
+.toolbar .todo-count {
+  flex: 2 0 auto;
 }
 
-
-.footer .todo-count {
-  flex: 1.5 0 auto;
-}
-
-.footer .filters {
+.toolbar .filters {
   flex: 1 0 auto;
 }
 
@@ -58,9 +95,8 @@ visibility: hidden;
   visibility: hidden;
 }
 
-
-
-input, .item {
+input,
+.item {
   font-style: italic;
   padding: 16px 16px 16px 60px;
   border: none;
@@ -74,8 +110,6 @@ input, .item {
   outline: none;
 }
 
-::placeholder { 
+::placeholder {
   opacity: 0.3;
 }
-
-

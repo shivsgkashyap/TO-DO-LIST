@@ -8,43 +8,40 @@
     <title>To Do List</title>
   </head>
   <body>
-    <div class="container">
-      <div class="header">
+      <header>
         <h1>todos</h1>
-      </div>
+      </header>
 
-      <div class="inputbox">
-        <button class="complete-all">></button>
-        <input type="text" placeholder="What needs to be done?" autofocus />
-      </div>
+      <main class="container"> 
+        <div class="input-box">
+          <button class="complete-all">></button>
+          <input type="text" placeholder="What needs to be done?" autofocus />
+        </div>
 
-      <div class="itemswrapper">
-        <div class="items"></div>
-      </div>
+        <section class="items-wrapper">
+          <div class="items"></div>
+        </section>
 
-      <div class="footer">
-        <span class="todo-count"
-          ><span class="list-count">2 </span> items left</span
-        >
-        <span class="filters">
-          <span class="filter">
-            <button class="all-filter">All</button>
+        <section class="toolbar">
+          <span class="todo-count"
+            ><span class="list-count">2 </span> items left</span
+          >
+          <span class="filters">
+            <span class="filter">
+              <button class="all-filter">All</button>
+            </span>
+            <span class="filter">
+              <button class="active-filter">Active</button>
+            </span>
+            <span class="filter">
+              <button class="completed-fliter">Completed</button>
+            </span>
           </span>
-          <span class="filter">
-            <button class="active-filter">Active</button>
-          </span>
-          <span class="filter">
-            <button class="completed-fliter">Completed</button>
-          </span>
-        </span>
-        <button class="clear-completed">Clear Completed</button>
+          <button class="clear-completed">Clear Completed</button>
+        </section>
       </div>
-    </div>
+    </main>
 
     <script src="script.js"></script>
   </body>
 </html>
-
-<!-- Write the HTML (Y), Style the page, Give input for user (Y), Show all items to user, Allow each item to be deleted, Allow each item to be marked as completed, Filtering the list, Persist the data through refreshes -->
-
-<!-- CRUD = Create,Read,Update,Delete -->
