@@ -15,7 +15,7 @@ h1 {
   font-size: 100px;
   font-weight: 100;
   text-align: center;
-  color: rgba(175, 47, 47, 0.15);
+  color: rgba(57, 115, 157, 0.2);
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
@@ -37,6 +37,11 @@ h1 {
 .items {
   display: flex;
   flex-direction: column;
+}
+
+.fa-solid {
+  width: 1em;
+  height: 1em;
 }
 
 button {
@@ -85,6 +90,7 @@ button:active {
 
 .toolbar {
   display: flex;
+  align-items: center;
   padding: 5px;
   margin: auto;
   width: 560px;
@@ -92,6 +98,8 @@ button:active {
 }
 .todo-count {
   flex: 1.5 0 auto;
+  font-weight: 400;
+  color: red;
 }
 
 .filters {

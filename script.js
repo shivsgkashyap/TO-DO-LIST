@@ -30,7 +30,7 @@ function load() {
               ? '<input class="todo-input" />'
               : list[counter]["input"]
           }</span>
-          <button class="delete"">x</button>
+          <i class="fa-solid fa-trash"></i>
         </div>
       `;
       totalItems = totalItems + item;
