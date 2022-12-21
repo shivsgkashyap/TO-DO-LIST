@@ -17,7 +17,7 @@ h1 {
   text-align: center;
   color: rgba(57, 115, 157, 0.2);
   margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
 }
 
 .input-box,
@@ -43,12 +43,25 @@ h1 {
 .fa-regular {
   font-family: "FontAwesome";
   font-style: normal;
-  font-size: 0.6em;
+
   cursor: pointer;
 }
 
+.fa-solid {
+  font-size: 0.6em;
+  color: gray;
+}
+
 .fa-regular {
-  font-size: 1em;
+  font-size: 0.9em;
+}
+
+.fa-circle-check {
+  color: green
+}
+
+.fa-circle {
+  color: #7aa7c7
 }
 
 button {
@@ -123,7 +136,7 @@ input {
   background: rgba(0, 0, 0, 0.003);
   background-color: white;
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 25px 50px 0 rgb(0 0 0 / 10%);
-  font-size: 24px;
+  font-size: 1.3em;
   line-height: 1.4em;
   width: 550px;
   outline: none;
@@ -137,7 +150,7 @@ input {
 .user-input {
   font-style: italic;
   flex:1 0 auto;
-  margin-left: 1em;
+  margin-left: 0.5em;
 }
 
 .item {
