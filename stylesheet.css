@@ -229,5 +229,6 @@ footer img:hover {
   .toolbar {
     flex-direction: column;
     gap: 1em;
+    width: 100%;
   }
 }
