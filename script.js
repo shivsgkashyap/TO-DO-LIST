@@ -11,7 +11,7 @@ var activeFilter = document.querySelector(".active-filter");
 var completedFilter = document.querySelector(".completed-fliter");
 
 function load() {
-  removeEventListenerToClass(".check", "click", onCheckClick);
+  removeEventListenerToClass(".fa-regular", "click", onCheckClick);
   removeEventListenerToClass(".delete", "click", onDeleteClick);
   removeEventListenerToClass(".user-input", "dblclick", onUserInputDblClick);
   removeEventListenerToClass(".todo-input", "blur", onBlurInput);
@@ -22,15 +22,15 @@ function load() {
     if (listFilter === list[counter]["completed"] || listFilter === "all") {
       var item = `
         <div class="item" data-counter="${counter}">
-          <button class="check">${
-            list[counter]["completed"] ? "yes" : "no"
-          }</button>
-          <span class="user-input">${
+          <i class="fa-regular ${
+            list[counter]["completed"] ? "fa-circle-check" : "fa-circle"
+          }"></i>
+          <div class="user-input">${
             counter === selectedTodoCounter
               ? '<input class="todo-input" />'
               : list[counter]["input"]
-          }</span>
-          <i class="fa-solid fa-trash"></i>
+          }</div>
+          <i class="fa-solid fa-trash delete"></i>
         </div>
       `;
       totalItems = totalItems + item;
@@ -75,7 +75,7 @@ function load() {
     todoInput.focus();
   }
 
-  addEventListenerToClass(".check", "click", onCheckClick);
+  addEventListenerToClass(".fa-regular", "click", onCheckClick);
   addEventListenerToClass(".delete", "click", onDeleteClick);
   addEventListenerToClass(".user-input", "dblclick", onUserInputDblClick);
 

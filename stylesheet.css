@@ -39,9 +39,16 @@ h1 {
   flex-direction: column;
 }
 
-.fa-solid {
-  width: 1em;
-  height: 1em;
+.fa-solid,
+.fa-regular {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-size: 0.6em;
+  cursor: pointer;
+}
+
+.fa-regular {
+  font-size: 1em;
 }
 
 button {
@@ -110,15 +117,12 @@ button:active {
   visibility: hidden;
 }
 
-input,
-.item {
-  font-style: italic;
+input {
   padding: 16px 16px 16px 60px;
   border: none;
   background: rgba(0, 0, 0, 0.003);
   background-color: white;
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 25px 50px 0 rgb(0 0 0 / 10%);
-  font-weight: 100;
   font-size: 24px;
   line-height: 1.4em;
   width: 550px;
@@ -127,4 +131,23 @@ input,
 
 ::placeholder {
   opacity: 0.3;
+  font-weight: 100;
+}
+
+.user-input {
+  font-style: italic;
+  flex:1 0 auto;
+  margin-left: 1em;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 0.7em;
+  background: rgba(0, 0, 0, 0.003);
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 25px 50px 0 rgb(0 0 0 / 10%);
+  font-size: 24px;
+  line-height: 1.4em;
+  width: 550px;\
 }
