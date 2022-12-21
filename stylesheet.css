@@ -203,3 +203,26 @@ footer img {
 footer img:hover {
   transform: rotate(360deg) scale(1.2);
 }
+
+@media only screen and (max-width: 600px) {
+  .input-box {
+    width: 90%;
+  }
+
+  .complete-all {
+    left: 1.25em;
+  }
+
+  .items {
+    width: 90%;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .toolbar {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
