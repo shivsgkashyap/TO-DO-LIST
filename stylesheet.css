@@ -103,6 +103,8 @@ input {
   font-style: italic;
   flex: 1 0 auto;
   margin-left: 0.5em;
+  width: 470px;
+  word-wrap: break-word;
 }
 
 .item {
@@ -230,5 +232,9 @@ footer img:hover {
     flex-direction: column;
     gap: 1em;
     width: 100%;
+  }
+
+  .user-input {
+    width: 90%;
   }
 }
