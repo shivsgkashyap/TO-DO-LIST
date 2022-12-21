@@ -107,7 +107,6 @@ function removeEventListenerToClass(cls, event, fn) {
 }
 
 var inputElement = document.querySelector("input");
-var showFooter = document.querySelector(".footer");
 inputElement.addEventListener("keyup", function (eventData) {
   if (eventData.code === "Enter") {
     list.push({ input: eventData.target.value, completed: false });
