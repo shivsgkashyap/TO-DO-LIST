@@ -61,6 +61,7 @@ function load() {
   }
 
   var listCount = document.querySelector(".list-count");
+  var itemCount = document.querySelector(".item-count");
   var listCounter = 0;
   for (var counter = 0; counter < list.length; counter++) {
     if (list[counter]["completed"] === false) {
@@ -68,6 +69,12 @@ function load() {
     }
   }
   listCount.textContent = listCounter;
+
+  if (listCounter === 0 || listCounter > 1) {
+    itemCount.textContent = "items left";
+  } else {
+    itemCount.textContent = "item left";
+  }
 
   var todoInput = document.querySelector(".todo-input");
   if (todoInput !== null) {
@@ -211,22 +218,3 @@ function onInputEnterKeyup(eventData) {
     saveToLocalStorage();
   }
 }
-
-//  // Identify double clicked element as "counter"
-// list.splice(counter, 1, eventData.target.value) // insert new element and delete existing element
-
-/*
-// 1) Double click event listener on to-do
-// 2) Change to-do to input box with placeholder of initial to do-value
-// 3) change input box back to regular HTML with new to-do as input value over-writing original HTML
-
-listItem.addEventListener('dblclick', function(eventData) {
-  var originalItem = eventData.target.innerHTML; // saves to-do in variable
-	var itemInput = document.createElement('input'); // create input box
-	itemInput.type = 'text';
-	itemInput.value = originalItem; // placeholder as original to-do
-	itemInput.addEventListener//(function of line 75?); // push new to-do in to list as normal and change back to HTML
-	eventData.target.parentNode.prepend(itemInput); // Add input to DOM
-	eventData.target.remove(); - // remove original to-do from DOM
-})
-*/

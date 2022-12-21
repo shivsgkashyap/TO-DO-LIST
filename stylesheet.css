@@ -30,7 +30,12 @@ input {
   line-height: 1.4em;
   width: 550px;
   outline: none;
+}
+
+.input-box {
   position: relative;
+  width: 600px;
+  margin: auto;
 }
 
 ::placeholder {
@@ -41,7 +46,7 @@ input {
 .complete-all {
   position: absolute;
   visibility: hidden;
-  left: 0;
+  left: 2.75em;
 }
 
 .fa-solid,
