@@ -64,6 +64,11 @@ input {
 .fa-trash {
   font-size: 0.6em;
   color: gray;
+  transition: all 0.3s ease-in-out;
+}
+
+.fa-trash:hover {
+  transform: scale(1.2);
 }
 
 .fa-regular {
