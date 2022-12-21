@@ -1,7 +1,7 @@
-# &nbsp Todo list 
+# &nbsp; Todo list 
 A simple but feature rich to do list created with HTML, CSS and Javascript. Please note this repo contains front-end only. Please see my other repo for the full stack version.
 
-## &nbsp Features
+## &nbsp; Features
 - Add todos
 - Delete todos
 - Mark todo as complete
